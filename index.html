@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h2 class="text-5xl m-8 font-semibold">Stop Watch:</h2>
+    </header>
+
+    <main>
+      <!--  -->
+      <section class="flex justify-center items-center h-[75vh]">
+        <div class="text-5xl border bg-sky-100 rounded-lg space-y-8 p-8">
+          <div class="text-center">
+            <h2 id="count" class="text-8xl text-blue-800">0</h2>
+          </div>
+          <div class="flex gap-10 justify-center">
+            <div>
+              <button
+                onclick="countStart()"
+                id="start-btn"
+                class="btn btn-primary text-3xl hover:bg-blue-600 border-none"
+              >
+                Start
+              </button>
+            </div>
+            <div>
+              <button
+                onclick="countStop()"
+                id="stop-btn"
+                class="btn btn-primary text-3xl hover:bg-blue-600 border-none"
+              >
+                Stop
+              </button>
+            </div>
+            <div>
+              <button
+                onclick="countReset()"
+                id="reset-btn"
+                class="btn btn-primary text-3xl hover:bg-blue-600 border-none"
+              >
+                Reset
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <!-- script -->
+    <script src="./js/stop-watch.js"></script>
+  </body>
+</html>
